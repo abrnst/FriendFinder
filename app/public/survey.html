@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+       
+        <title>Survey</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </head>
+
+
+    <body>
+        <div class = "container">
+            <div>
+                <h1>Survey Questions!</h1>
+            </div>
+            <form>
+                    <div>
+                      <label for="formGroupExampleInput">Your Name! (Required)</label>
+                      <input type="text" class="validate" id="name" placeholder="Example input">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Your Picture (Required)</label>
+                      <input type="text" class="validate" id="photo" placeholder="Another input">
+                    </div>
+            </form>
+            
+
+
+            <h3>Question 1</h3>
+            <p>Do you like spending time outside?</p>
+            <select class="chosen-select" id="q1">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+    
+            <h3>Question 2</h3>
+            <p>You would rather watch a movie than watch a tv series.</p>
+            <select class="chosen-select" id="q2">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+    
+            <h3>Question 3</h3>
+            <p>I would like to travel often.</p>
+            <select class="chosen-select" id="q3">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+    
+            <h3>Question 4</h3>
+            <p>I like to eat out than cook at home.</p>
+            <select class="chosen-select" id="q4">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+    
+            <h3>Question 5</h3>
+            <p>I would rather go to a big party than a small get together.</p>
+            <select class="chosen-select" id="q5">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            
+            <br>
+    
+            <h3>Question 6</h3>
+            <p>I like to play sports often.</p>
+            <select class="chosen-select" id="q6">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select><br>
+    
+            <h3>Question 7</h3>
+            <p>I am interested in learning a new language. </p>
+            <select class="chosen-select" id="q7">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+    
+            <h3>Question 8</h3>
+            <p>I like to play board games over video games.</p>
+            <select class="chosen-select" id="q8">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+    
+            <h3>Question 9</h3>
+            <p>I like going to bars on the weekend.</p>
+            <select class="chosen-select" id="q9">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+    
+    
+            <h3>Question 10</h3>
+            <h4>I like to drink often.</h4>
+            <select class="chosen-select" id="q10">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+         
+    <br>
+            <button type="submit" data-target="modal1" id="submitBtn">Submit</button>
+
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>Here is your new best friend!</h4>
+                <h5 id="matchName"></h5>
+                <img id="matchPic" src="" alt="No Image" width = 250px>
+              </div>
+            <div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+            </div>
+          </div>
+    
+        </div>
+
+        </div>
+        
+        <script type="text/javascript">
+        $(document).ready(function() {
+        $("#submitBtn").on("click", function(event){
+          event.preventDefault();
+          
+            
+          var newFriend = {
+                name:  $("#name").val().trim(),
+                profilePic: $("#photo").val().trim(),
+                scores: [
+                        $("#q1").val().trim(),
+                        $("#q2").val().trim(),
+                        $("#q3").val().trim(),
+                        $("#q4").val().trim(),
+                        $("#q5").val().trim(),
+                        $("#q6").val().trim(),
+                        $("#q7").val().trim(),
+                        $("#q8").val().trim(),
+                        $("#q9").val().trim(),
+                        $("#q10").val().trim()
+                ]
+    };
+            console.log(newFriend);
+          
+           
+           $.post("/api/friends", newFriend, function(data){
+
+                $("#matchName").text(data.name);
+                $("#matchPic").attr("src", data.profilePic);
+
+
+           });
+
+          });
+        
+          
+        });
+        </script>
+     
+    </body>
+</html>
