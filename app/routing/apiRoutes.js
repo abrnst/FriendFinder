@@ -13,7 +13,7 @@ module.exports = function(app){
        
         var newFriendScores = req.body.scores;
         var scoreArray = [];
-        var friendCount = 0;
+        
         var bestMatch = 0;
         
 
